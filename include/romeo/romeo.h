@@ -6,8 +6,8 @@
  * 
  */
 
-#ifndef hrp2_10_H
-#define hrp2_10_H
+#ifndef ROMEO_H
+#define ROMEO_H
 
 /**
    \brief HALFSITTINGPOSITION  \

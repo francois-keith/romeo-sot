@@ -3,10 +3,10 @@
 #
 #  Author: Florent Lamiraux
 #          Olivier Stasse
+#          François Keith
 # 
-#  Modif. 16/06/2010: adding support for small models.
 
-SET(hrp2_10_HEADERS
+SET(romeo_HEADERS
   romeo/romeo.h 
   romeo-notoes/romeo-notoes.h 
 )
