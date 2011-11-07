@@ -15,6 +15,6 @@ SET(romeo_HEADERS
 # Install procedure for the header files
 #----------------------------------------------------
 INSTALL(FILES ${romeo_HEADERS}
-  DESTINATION include/
+  DESTINATION include/${PROJECT_NAME}
   PERMISSIONS OWNER_READ GROUP_READ WORLD_READ OWNER_WRITE
   )
