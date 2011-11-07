@@ -1,0 +1,36 @@
+<!-- RomeoNoToes robot, version 1.0.0-->
+<LinkJointNameAndRank>
+	<Nb> 32</Nb>
+	<Link> WAIST 0 </Link>
+	<Link> TrunkYaw_z  6 </Link>
+	<Link> NeckYaw_z  7 </Link>
+	<Link> NeckPitch_y  8 </Link>
+	<Link> HeadPitch_y  9 </Link>
+	<Link> HeadRoll_x  10 </Link>
+	<Link> LShoulderPitch_y  11 </Link>
+	<Link> LShoulderYaw_z  12 </Link>
+	<Link> LElbowRoll_x  13 </Link>
+	<Link> LElbowYaw_z  14 </Link>
+	<Link> LWristRoll_x  15 </Link>
+	<Link> LWristYaw_y  16 </Link>
+	<Link> LWristPitch_z  17 </Link>
+	<Link> RShoulderPitch_y  18 </Link>
+	<Link> RShoulderYaw_z  19 </Link>
+	<Link> RElbowRoll_x  20 </Link>
+	<Link> RElbowYaw_z  21 </Link>
+	<Link> RWristRoll_x  22 </Link>
+	<Link> RWristYaw_y  23 </Link>
+	<Link> RWristPitch_z  24 </Link>
+	<Link> LHipYaw_z  25 </Link>
+	<Link> LHipRoll_x  26 </Link>
+	<Link> LHipPitch_y  27 </Link>
+	<Link> LKneePitch_y  28 </Link>
+	<Link> LAnklePitch_y  29 </Link>
+	<Link> LAnkleRoll_x  30 </Link>
+	<Link> RHipYaw_z  31 </Link>
+	<Link> RHipRoll_x  32 </Link>
+	<Link> RHipPitch_y  33 </Link>
+	<Link> RKneePitch_y  34 </Link>
+	<Link> RAnklePitch_y  35 </Link>
+	<Link> RAnkleRoll_x  36 </Link>
+</LinkJointNameAndRank>

@@ -1,0 +1,113 @@
+#VRML V2.0 utf8
+
+
+Transform {
+	children [
+		Inline { url "LWristPitch.wrl" }
+
+		# LFinger 1 (Index finger)
+		Transform {
+			rotation 0 0 1 -0.12217305
+			translation 0.10937 	-0.02468 	0.00329
+			children [ 
+				Inline { url "Phalax.wrl" }
+				Transform {
+					translation 0.01818	0 0
+					children [	 
+						Inline { url "Phalax.wrl" } 
+						Transform {
+							translation 0.01818	0 0
+							children [	 
+								Inline { url "PhalaxEnd.wrl" } 
+							]
+						}
+					]
+				}
+				Transform {	 #patch add additional Phalax. Seems one is missing
+					translation -0.01818	0 0
+					children [
+						Inline { url "Phalax.wrl" }
+					]
+				}
+			]
+		}
+
+		# LFinger 2 (Middle finger)
+		Transform {
+			translation 0.11525 	0.00 	0.00329
+			children [ 
+				Inline { url "Phalax.wrl" }
+				Transform {
+					translation 0.01818	0 0
+					children [	 
+						Inline { url "Phalax.wrl" } 
+						Transform {
+							translation 0.01818	0 0
+							children [	 
+								Inline { url "PhalaxEnd.wrl" } 
+							]
+						}
+					]
+				}
+				Transform {	 #patch add additional Phalax. Seems one is missing
+					translation -0.01818	0 0
+					children [
+						Inline { url "Phalax.wrl" }
+					]
+				}
+			]
+		}
+
+		# LFinger 3 (Ring finger)
+		Transform {
+			translation 0.09936 	0.02478 	0.00329
+			rotation 0 0 1 0.12217305   # 7 
+			children [ 
+				Inline { url "Phalax.wrl" }
+				Transform {
+					translation 0.01818	0 0
+					children [	 
+						Inline { url "Phalax.wrl" } 
+						Transform {
+							translation 0.01818	0 0
+							children [	 
+								Inline { url "PhalaxEnd.wrl" } 
+							]
+						}
+					]
+				}													 
+			]
+		}
+
+	# LThumb
+	Transform {
+			# seems that x is too big
+			# sign error for y 
+			translation 0.07115 	-0.02465 	-0.01233
+			rotation 0 0 1 -0.6236
+			children [
+				Inline { url "LThumb.wrl" }
+				Transform {
+					translation 0 -0.01818	0		
+					# reduce the rotation (originally 148 degrees) 
+					rotation 0 0 1 -1
+					children [									  
+						Transform {
+							#						
+							translation 0.0122 0 0 
+							children [	 
+								Inline { url "Phalax.wrl" } 
+								Transform {
+									translation 0.01818	0 0
+									children [	 
+										Inline { url "PhalaxEnd.wrl" } 
+									]
+								}
+							]
+						}
+					]
+				}													 
+			]
+		}
+	]
+}

@@ -1,0 +1,24 @@
+# 
+#  Copyright CNRS-AIST 
+#
+#  Author: Oliviert Stasse
+# 
+
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+
+INCLUDE(cmake/base.cmake)
+INCLUDE(cmake/cpack.cmake)
+
+SET(PROJECT_NAME romeo)
+SET(PROJECT_DESCRIPTION "Romeo dedicated data files")
+SET(PROJECT_URL "")
+
+
+SETUP_PROJECT()
+
+ADD_SUBDIRECTORY(include)
+ADD_SUBDIRECTORY(data)
+
+SETUP_PROJECT_FINALIZE()
+SETUP_PROJECT_CPACK()
+
