@@ -1,9 +1,8 @@
 /*
- *  Copyright JRL AIST-CNRS
+ *  Copyright INRIA RHONES ALPES
  *
- *  Authors: Olivier Stasse (modif. 12/05/2010)
- *           Florent Lamiraux 
- * 
+ *  Authors: Francois Keith
+ *
  */
 
 #ifndef ROMEO_H
@@ -11,106 +10,63 @@
 
 /**
    \brief HALFSITTINGPOSITION  \
- 
-   legs : 0.0, 0.0, -26.0, 50.0, -24.0, 0.0, 0.0, 0.0, -26.0, 50.0, -24.0, 0.0
- 
-   chest and head : 0.0, 0.0, 0.0, 0.0, 
- 
-   right arm : 15.0, -10.0, 0.0, -30.0, 0.0, 0.0, 0.0, 10.0, 
- 
-   left arm : 15.0,  10.0, 0.0, -30.0, 0.0, 0.0, 0.0, 10.0, 
- 
-   right hand : -10.0, 10.0, -10.0, 10.0, -10.0, 
- 
-   left hand : -10.0, 10.0, -10.0, 10.0, -10.0  
+
+   chest       : 0
+   head        : 0, 0, 0, 0
+   left arm    : 86, 34, -29, -60, -23, -17, -11
+   right arm   : 86, -34, 29, 60, -23, -17, -11
+   left leg    : 0, 0, -29, 57, -29, 0, 0
+   right leg   : 0, 0, -29, 57, -29, 0, 0
 */
 
-#define HALFSITTINGPOSITION_DEG_OPENHRP {						\
-      0.0, 0.0, -26.0, 50.0, -24.0, 0.0, 0.0, 0.0, -26.0, 50.0, -24.0, 0.0, \
-      0.0, 0.0, 0.0, 0.0,						\
-	15.0, -10.0, 0.0, -30.0, 0.0, 0.0, 0.0, 10.0,			\
-	15.0,  10.0, 0.0, -30.0, 0.0, 0.0, 0.0, 10.0,			\
-      -10.0, 10.0, -10.0, 10.0, -10.0,					\
-      -10.0, 10.0, -10.0, 10.0, -10.0					\
-      };
+#define HALFSITTINGPOSITION_DEG_OPENHRP {			\
+   0		\
+   0, 0, 0, 0		\
+   86, 34, -29, -60, -23, -17, -11		\
+   86, -34, 29, 60, -23, -17, -11		\
+   0, 0, -29, 57, -29, 0, 0		\
+   0, 0, -29, 57, -29, 0, 0
 
-/**
-   \brief HALFSITTINGPOSITION_RAD_KINEO  \
-  
-   FreeFlyer : 0.0, 0.0, 0.648702, 0.0 , 0.0, 0.0
- 
-   legs : 0.0, 0.0, -0.453785, 0.872664, -0.418879, 0.0, 0.0, 0.0, -0.453785, 0.872664, -0.48879, 0.0
- 
-   chest and head : 0.0, 0.0, 0.0, 0.0, 
- 
-   right arm : 0.261799, -0.174532, 0.0, -0.523598, 0.0, 0.0, 0.0, 0.174532, 
-
-   right hand : -0.349065, 0.349065, -0.349065, 0.349065, -0.349065, 
- 
-   left arm : 0.261799,  0.174532, 0.0, -0.523598, 0.0, 0.0, 0.0, 0.174532, 
- 
-   left hand : -0.174532, 0.174532, -0.174532, 0.174532, -0.174532  
-*/
-#define HALFSITTINGPOSITION_RAD_KINEO {					\
-    0.0, 0.0, 0.648702, 0.0 , 0.0, 0.0,					\
-      0.0, 0.0, -0.453785,0.872664,  -0.418879, 0.0, 0.0, 0.0, -0.453785,0.872664,  -0.418879, 0.0, \
-      0.0, 0.0, 0.0, 0.0,						\
-      0.261799, -0.174532, 0.0, -0.523598, 0.0, 0.0, 0.0, 0.174532,	\
-      -0.349065, 0.349065, -0.349065, 0.349065, -0.349065,		\
-      0.261799,  0.174532, 0.0,  -0.523598, 0.0, 0.0, 0.0, 0.174532,	\
-      -0.174532, 0.174532, -0.174532, 0.174532, -0.174532		\
-      };
-
-
-enum Hrp2JointId {
+enum RomeoJointId {
   WAIST = 0,
   WAIST_TY,
   WAIST_TZ,
   WAIST_RX,
   WAIST_RY,
   WAIST_RZ,
-  RLEG_JOINT0,   // 6
-  RLEG_JOINT1,   // 7
-  RLEG_JOINT2,   // 8
-  RLEG_JOINT3,   // 9
-  RLEG_JOINT4,   // 10
-  RLEG_JOINT5,   // 11
-  LLEG_JOINT0,   // 12
-  LLEG_JOINT1,   // 13
-  LLEG_JOINT2,   // 14
-  LLEG_JOINT3,   // 15
-  LLEG_JOINT4,   // 16
-  LLEG_JOINT5,   // 17
-  CHEST_JOINT0,  // 18
-  CHEST_JOINT1,  // 19
-  HEAD_JOINT0,   // 20
-  HEAD_JOINT1,   // 21
-  RARM_JOINT0,   // 22
-  RARM_JOINT1,   // 23
-  RARM_JOINT2,   // 24
-  RARM_JOINT3,   // 25
-  RARM_JOINT4,   // 26
-  RARM_JOINT5,   // 27
-  RARM_JOINT6,   // 28
-  RARM_JOINT7,   // 29
-  RHAND_JOINT0,  // 30
-  RHAND_JOINT1,  // 31
-  RHAND_JOINT2,  // 32
-  RHAND_JOINT3,  // 33
-  RHAND_JOINT4,  // 34
-  LARM_JOINT0,   // 35
-  LARM_JOINT1,   // 36
-  LARM_JOINT2,   // 37
-  LARM_JOINT3,   // 38
-  LARM_JOINT4,   // 39
-  LARM_JOINT5,   // 40
-  LARM_JOINT6,   // 41
-  LARM_JOINT7,   // 42
-  LHAND_JOINT0,  // 43
-  LHAND_JOINT1,  // 44
-  LHAND_JOINT2,  // 45
-  LHAND_JOINT3,  // 46
-  LHAND_JOINT4   // 47
+  TrunkYaw_z,		// 6
+  NeckYaw_z,		// 7
+  NeckPitch_y,		// 8
+  HeadPitch_y,		// 9
+  HeadRoll_x,		// 10
+  LShoulderPitch_y,		// 11
+  LShoulderYaw_z,		// 12
+  LElbowRoll_x,		// 13
+  LElbowYaw_z,		// 14
+  LWristRoll_x,		// 15
+  LWristYaw_y,		// 16
+  LWristPitch_z,		// 17
+  RShoulderPitch_y,		// 18
+  RShoulderYaw_z,		// 19
+  RElbowRoll_x,		// 20
+  RElbowYaw_z,		// 21
+  RWristRoll_x,		// 22
+  RWristYaw_y,		// 23
+  RWristPitch_z,		// 24
+  LHipYaw_z,		// 25
+  LHipRoll_x,		// 26
+  LHipPitch_y,		// 27
+  LKneePitch_y,		// 28
+  LAnklePitch_y,		// 29
+  LAnkleRoll_x,		// 30
+  LToePitch_y,		// 31
+  RHipYaw_z,		// 32
+  RHipRoll_x,		// 33
+  RHipPitch_y,		// 34
+  RKneePitch_y,		// 35
+  RAnklePitch_y,		// 36
+  RAnkleRoll_x,		// 37
+  RToePitch_y,		// 38
 };
 
-#endif
+#endif // ROMEO_H
