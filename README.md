@@ -6,6 +6,11 @@ IMPORTANT: This software is *NOT* open-source.
 Setup
 -----
 
+if the folder cmake does not exists, please run first
+git submodule add git://github.com/jrl-umi3218/jrl-cmakemodules.git cmake
+git submodule init 
+git submodule update
+
 To compile this package, it is recommended to create a separate build
 directory:
 
