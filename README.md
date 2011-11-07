@@ -25,4 +25,8 @@ be deleted to reconfigure a package from scratch.
 
 ### Dependencies
 
-None
+The matrix abstract layer depends on several packages which
+have to be available on your machine.
+
+ - System tools:
+   - CMake (>=2.6)
