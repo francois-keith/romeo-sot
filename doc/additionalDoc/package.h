@@ -1,7 +1,7 @@
 /**
 \mainpage
 
-\section intro_hrp2_10 Introduction
+\section intro_romeo Introduction
 
 This package implements ...
 

@@ -159,7 +159,7 @@ SKIP_FUNCTION_MACROS   = YES
 #---------------------------------------------------------------------------
 TAGFILES               = \
 
-GENERATE_TAGFILE       = hrp2_10.doxytag
+GENERATE_TAGFILE       = romeo.doxytag
 ALLEXTERNALS           = NO
 EXTERNAL_GROUPS        = YES
 PERL_PATH              = /usr/bin/perl
