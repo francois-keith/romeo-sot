@@ -35,6 +35,7 @@ DEF OB_RToePitch Transform {
 						}
 					}
 					geometry IndexedFaceSet {
+						ccw FALSE
 						solid TRUE
 						coord DEF coord_Mesh Coordinate {
 							point [
