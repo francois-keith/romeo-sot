@@ -2,6 +2,7 @@
 from robotSpecific import pkgDataRootDir,modelName,robotDimension,initialConfig,gearRatio,inertiaRotor,specificitiesName,jointRankName
 
 # RomeoNoToes data
+pkgDataRootDir['romeo_notoes'] = "${CMAKE_INSTALL_PREFIX}/share/romeo"
 modelName['romeo_notoes'] = 'RomeoNoToes.wrl'
 specificitiesName['romeo_notoes'] = 'RomeoNoToesSpecificities.xml'
 jointRankName['romeo_notoes'] = 'RomeoNoToesLinkJointRank.xml'
