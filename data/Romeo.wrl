@@ -230,6 +230,7 @@ DEF Romeo Humanoid {
 				jointAxis "Z"
 				jointId 0
 				translation     -0 -0 0.2
+				rotation     1 0 0  0
 				llimit [-0.78539815]  # -45
 				ulimit [0.78539815]  # 45
 				lvlimit [-0]
@@ -248,6 +249,7 @@ DEF Romeo Humanoid {
 						jointAxis "Z"
 						jointId 1
 						translation     0 0 0.0835
+						rotation     1 0 0  0
 						llimit [-1.5707963]  # -90
 						ulimit [1.5707963]  # 90
 						lvlimit [-5.8886917]
@@ -263,6 +265,7 @@ DEF Romeo Humanoid {
 								jointAxis "Y"
 								jointId 2
 								translation     0 0 0
+								rotation     1 0 0  0
 								llimit [-0.698131688888889]  # -40
 								ulimit [0.698131688888889]  # 40
 								lvlimit [-6.17848]
@@ -281,6 +284,7 @@ DEF Romeo Humanoid {
 										jointAxis "Y"
 										jointId 3
 										translation     0 0 0.09511
+										rotation     1 0 0  0
 										llimit [-0.289724650888889]  # -16.6
 										ulimit [0.349065844444444]  # 20
 										lvlimit [-7.2988824]
@@ -296,6 +300,7 @@ DEF Romeo Humanoid {
 												jointAxis "X"
 												jointId 4
 												translation     0 0 0
+												rotation     1 0 0  0
 												llimit [-0.523598766666667]  # -30
 												ulimit [0.523598766666667]  # 30
 												lvlimit [-4.7442645]
@@ -322,6 +327,7 @@ DEF Romeo Humanoid {
 						jointAxis "Y"
 						jointId 5
 						translation     0.005 0.19 0
+						rotation     1 0 0  0
 						llimit [-1.51843642333333]  # -87
 						ulimit [2.09439506666667]  # 120
 						lvlimit [-6.52664058]
@@ -337,6 +343,7 @@ DEF Romeo Humanoid {
 								jointAxis "Z"
 								jointId 6
 								translation     0 0 0
+								rotation     1 0 0  0
 								llimit [-0.200712860555556]  # -11.5
 								ulimit [1.43989660833333]  # 82.5
 								lvlimit [-10.333784]
@@ -355,6 +362,7 @@ DEF Romeo Humanoid {
 										jointAxis "X"
 										jointId 7
 										translation     0.205 0 0
+										rotation     1 0 0  0
 										llimit [-2.60054054111111]  # -149
 										ulimit [1.39626337777778]  # 80
 										lvlimit [-10.333784]
@@ -370,6 +378,7 @@ DEF Romeo Humanoid {
 												jointAxis "Z"
 												jointId 8
 												translation     0 0 0
+												rotation     1 0 0  0
 												llimit [-1.5707963]  # -90
 												ulimit [0.401425721111111]  # 23
 												lvlimit [-10.3810644]
@@ -388,6 +397,7 @@ DEF Romeo Humanoid {
 														jointAxis "X"
 														jointId 9
 														translation     0.182 0 0
+														rotation     1 0 0  0
 														llimit [-3.66519136666667]  # -210
 														ulimit [0.523598766666667]  # 30
 														lvlimit [-0]
@@ -406,6 +416,7 @@ DEF Romeo Humanoid {
 																jointAxis "Y"
 																jointId 10
 																translation     0 0 0
+																rotation     1 0 0  0
 																llimit [-0.488692182222222]  # -28
 																ulimit [0.488692182222222]  # 28
 																lvlimit [-0]
@@ -424,6 +435,7 @@ DEF Romeo Humanoid {
 																		jointAxis "Z"
 																		jointId 11
 																		translation     0 0 0
+																		rotation     1 0 0  0
 																		llimit [-0.977384364444444]  # -56
 																		ulimit [0.977384364444444]  # 56
 																		lvlimit [-0]
@@ -456,6 +468,7 @@ DEF Romeo Humanoid {
 						jointAxis "Y"
 						jointId 12
 						translation     0.005 -0.19 0
+						rotation     1 0 0  0
 						llimit [-1.51843642333333]  # -87
 						ulimit [2.09439506666667]  # 120
 						lvlimit [-6.52664058]
@@ -471,6 +484,7 @@ DEF Romeo Humanoid {
 								jointAxis "Z"
 								jointId 13
 								translation     0 0 0
+								rotation     1 0 0  0
 								llimit [-1.43989660833333]  # -82.5
 								ulimit [0.200712860555556]  # 11.5
 								lvlimit [-10.333784]
@@ -489,6 +503,7 @@ DEF Romeo Humanoid {
 										jointAxis "X"
 										jointId 14
 										translation     0.205 0 0
+										rotation     1 0 0  0
 										llimit [-1.39626337777778]  # -80
 										ulimit [2.60054054111111]  # 149
 										lvlimit [-10.333784]
@@ -504,6 +519,7 @@ DEF Romeo Humanoid {
 												jointAxis "Z"
 												jointId 15
 												translation     0 0 0
+												rotation     1 0 0  0
 												llimit [-0.401425721111111]  # -23
 												ulimit [1.5707963]  # 90
 												lvlimit [-10.3810644]
@@ -522,6 +538,7 @@ DEF Romeo Humanoid {
 														jointAxis "X"
 														jointId 16
 														translation     0.182 0 0
+														rotation     1 0 0  0
 														llimit [-0.523598766666667]  # -30
 														ulimit [3.66519136666667]  # 210
 														lvlimit [-0]
@@ -540,6 +557,7 @@ DEF Romeo Humanoid {
 																jointAxis "Y"
 																jointId 17
 																translation     0 0 0
+																rotation     1 0 0  0
 																llimit [-0.488692182222222]  # -28
 																ulimit [0.488692182222222]  # 28
 																lvlimit [-0]
@@ -558,6 +576,7 @@ DEF Romeo Humanoid {
 																		jointAxis "Z"
 																		jointId 18
 																		translation     0 0 0
+																		rotation     1 0 0  0
 																		llimit [-0.977384364444444]  # -56
 																		ulimit [0.977384364444444]  # 56
 																		lvlimit [-0]
@@ -592,6 +611,7 @@ DEF Romeo Humanoid {
 				jointAxis "Z"
 				jointId 19
 				translation     0 0.096 -0.20004
+				rotation     1 0 0  0
 				llimit [-0.261799383333333]  # -15
 				ulimit [0.261799383333333]  # 15
 				lvlimit [-8.082461]
@@ -607,6 +627,7 @@ DEF Romeo Humanoid {
 						jointAxis "X"
 						jointId 20
 						translation     0 0 0
+						rotation     1 0 0  0
 						llimit [-0.261799383333333]  # -15
 						ulimit [0.523598766666667]  # 30
 						lvlimit [-10.289294]
@@ -622,6 +643,7 @@ DEF Romeo Humanoid {
 								jointAxis "Y"
 								jointId 21
 								translation     0 0 0
+								rotation     1 0 0  0
 								llimit [-1.71042263777778]  # -98
 								ulimit [0.523598766666667]  # 30
 								lvlimit [-6.7799634]
@@ -640,6 +662,7 @@ DEF Romeo Humanoid {
 										jointAxis "Y"
 										jointId 22
 										translation     0 0 -0.32
+										rotation     1 0 0  0
 										llimit [-0.0523598766666667]  # -3
 										ulimit [2.25147469666667]  # 129
 										lvlimit [-8.27600953]
@@ -658,6 +681,7 @@ DEF Romeo Humanoid {
 												jointAxis "Y"
 												jointId 23
 												translation     0 0 -0.29
+												rotation     1 0 0  0
 												llimit [-0.78539815]  # -45
 												ulimit [0.523598766666667]  # 30
 												lvlimit [-6.7799634]
@@ -673,6 +697,7 @@ DEF Romeo Humanoid {
 														jointAxis "X"
 														jointId 24
 														translation     0 0 0
+														rotation     1 0 0  0
 														llimit [-0.349065844444444]  # -20
 														ulimit [0.349065844444444]  # 20
 														lvlimit [-10.28929]
@@ -691,6 +716,7 @@ DEF Romeo Humanoid {
 																jointAxis "Y"
 																jointId 25
 																translation     0.1135 0 -0.0524
+																rotation     1 0 0  0
 																llimit [-0.78539815]  # -45
 																ulimit [0]  # 0
 																lvlimit [-0]
@@ -723,6 +749,7 @@ DEF Romeo Humanoid {
 				jointAxis "Z"
 				jointId 26
 				translation     0 -0.096 -0.20004
+				rotation     1 0 0  0
 				llimit [-0.261799383333333]  # -15
 				ulimit [0.261799383333333]  # 15
 				lvlimit [-8.082461]
@@ -738,6 +765,7 @@ DEF Romeo Humanoid {
 						jointAxis "X"
 						jointId 27
 						translation     0 0 0
+						rotation     1 0 0  0
 						llimit [-0.523598766666667]  # -30
 						ulimit [0.261799383333333]  # 15
 						lvlimit [-10.289294]
@@ -753,6 +781,7 @@ DEF Romeo Humanoid {
 								jointAxis "Y"
 								jointId 28
 								translation     0 0 0
+								rotation     1 0 0  0
 								llimit [-1.71042263777778]  # -98
 								ulimit [0.523598766666667]  # 30
 								lvlimit [-6.7799634]
@@ -771,6 +800,7 @@ DEF Romeo Humanoid {
 										jointAxis "Y"
 										jointId 29
 										translation     0 0 -0.32
+										rotation     1 0 0  0
 										llimit [-0.0523598766666667]  # -3
 										ulimit [2.25147469666667]  # 129
 										lvlimit [-8.27600953]
@@ -789,6 +819,7 @@ DEF Romeo Humanoid {
 												jointAxis "Y"
 												jointId 30
 												translation     0 0 -0.29
+												rotation     1 0 0  0
 												llimit [-0.78539815]  # -45
 												ulimit [0.523598766666667]  # 30
 												lvlimit [-6.7799634]
@@ -804,6 +835,7 @@ DEF Romeo Humanoid {
 														jointAxis "X"
 														jointId 31
 														translation     0 0 0
+														rotation     1 0 0  0
 														llimit [-0.349065844444444]  # -20
 														ulimit [0.349065844444444]  # 20
 														lvlimit [-10.28929]
@@ -822,6 +854,7 @@ DEF Romeo Humanoid {
 																jointAxis "Y"
 																jointId 32
 																translation     0.1135 0 -0.0524
+																rotation     1 0 0  0
 																llimit [-0.78539815]  # -45
 																ulimit [0]  # 0
 																lvlimit [-0]
