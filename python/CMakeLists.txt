@@ -20,7 +20,9 @@
 
 IF(EXISTS ${PROJECT_ROOT_DIR}/../sot-dyninv/python)
 INSTALL(FILES
+    dyn_romeo_notoes.py
     "${CMAKE_CURRENT_BINARY_DIR}/robotSpecific_romeo.py"
+    kinesimple_romeo_notoes.py
     "${CMAKE_CURRENT_BINARY_DIR}/robotSpecific_romeo_notoes.py"
     "${CMAKE_CURRENT_BINARY_DIR}/robotSpecific_romeo_hands.py"
     "${CMAKE_CURRENT_BINARY_DIR}/robotSpecific_romeo_hands_notoes.py"
