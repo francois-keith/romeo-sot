@@ -41,6 +41,7 @@ SET(COMMON_VRML_FILES
   LThumb.wrl          
   RElbowYaw.wrl       
   Torso.wrl
+  Waist.wrl
 )
 
 SET(${PROJECT_NAME}_ROMEODATA
