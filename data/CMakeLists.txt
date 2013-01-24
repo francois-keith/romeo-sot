@@ -54,6 +54,17 @@ SET(${PROJECT_NAME}_ROMEODATA
   RomeoNoToesSpecificities.xml
   RomeoNoToesInitConfig.dat
 
+  RomeoHands.wrl
+  RomeoHandsLinkJointRank.xml
+  RomeoHandsSpecificities.xml
+  RomeoHandsInitConfig.dat
+  
+  RomeoHandsNoToes.wrl
+  RomeoHandsNoToesLinkJointRank.xml
+  RomeoHandsNoToesSpecificities.xml
+  RomeoHandsNoToesInitConfig.dat
+
+
   ${COMMON_VRML_FILES}
 )
 
