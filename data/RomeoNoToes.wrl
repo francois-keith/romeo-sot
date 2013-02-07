@@ -225,7 +225,13 @@ DEF RomeoNoToes Humanoid {
 				mass                  4.16277
 				momentsOfInertia      [ 0.24187936706 -6.889635e-05 0.00282915469 -6.889635e-05 0.23816771319 0.00030625215 0.00282915469 0.00030625215 0.02147385599 ]
 				children [
+                                  # Add a patch for robot-viewer
+				  Transform {
+				    translation 0.000000 0.000000 0.2000000
+				    children [
 					Inline { url "Waist.wrl" }
+				    ]
+				  }
 				]
 			} # Segment TrunkYaw
 			DEF TrunkYaw_z Joint {

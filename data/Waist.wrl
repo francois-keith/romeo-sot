@@ -21,7 +21,7 @@ Background {
 }
 
 DEF OB_Waist Transform {
-	translation 0.000000 0.000000 0.2000000
+#	translation 0.000000 0.000000 0.2000000
 	rotation 1.000000 0.000000 0.000000 0.000000
 	scale 0.0100000 0.0100000 0.0100000
 	children [
