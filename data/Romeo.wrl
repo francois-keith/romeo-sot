@@ -222,7 +222,7 @@ DEF Romeo Humanoid {
 			jointType "free"
 			translation 0 0 0
 			children [
-			DEF TrunkYaw Segment {
+			DEF TrunkYawLink Segment {
 				centerOfMass          0.00932 0.0005 -0.2119
 				mass                  4.16277
 				momentsOfInertia      [ 0.24187936706 -6.889635e-05 0.00282915469 -6.889635e-05 0.23816771319 0.00030625215 0.00282915469 0.00030625215 0.02147385599 ]
@@ -235,8 +235,8 @@ DEF Romeo Humanoid {
 				    ]
 				  }
 				]
-			} # Segment TrunkYaw
-			DEF TrunkYaw_z Joint {
+			} # Segment TrunkYawLink
+			DEF TrunkYaw Joint {
 				jointType "rotate"
 				jointAxis "Z"
 				jointId 0
@@ -247,15 +247,15 @@ DEF Romeo Humanoid {
 				lvlimit [-0]
 				uvlimit [0]
 				children [
-					DEF Trunk Segment {
+					DEF TrunkLink Segment {
 						centerOfMass          0.0023 0.00038 -0.04854
 						mass                  9.9216
 						momentsOfInertia      [ 0.12933235299 -0.00035965149 0.00283888003 -0.00035965149 0.12683108985 -0.00200842624 0.00283888003 -0.00200842624 0.11062739082 ]
 						children [
 							Inline { url "Torso.wrl" }
 						]
-					} # Segment Trunk
-					DEF NeckYaw_z Joint {
+					} # Segment TrunkLink
+					DEF NeckYaw Joint {
 						jointType "rotate"
 						jointAxis "Z"
 						jointId 1
@@ -266,12 +266,12 @@ DEF Romeo Humanoid {
 						lvlimit [-5.8886917]
 						uvlimit [5.8886917]
 						children [
-							DEF NeckYaw Segment {
+							DEF NeckYawLink Segment {
 								centerOfMass          0 -0.00183 -0.03074
 								mass                  0.51016
 								momentsOfInertia      [ 0.00122158912 -8.014e-08 1.145e-08 -8.014e-08 0.00124607826 -1.84095e-06 1.145e-08 -1.84095e-06 0.00018796505 ]
-							} # Segment NeckYaw
-							DEF NeckPitch_y Joint {
+							} # Segment NeckYawLink
+							DEF NeckPitch Joint {
 								jointType "rotate"
 								jointAxis "Y"
 								jointId 2
@@ -282,15 +282,15 @@ DEF Romeo Humanoid {
 								lvlimit [-6.17848]
 								uvlimit [6.17848]
 								children [
-									DEF NeckPitch Segment {
+									DEF NeckPitchLink Segment {
 										centerOfMass          -0.00472 -0.00054 0.04432
 										mass                  0.23875
 										momentsOfInertia      [ 0.0008660225 -1.57263e-06 6.138255e-05 -1.57263e-06 0.00081828666 9.69515e-06 6.138255e-05 9.69515e-06 0.00023891895 ]
 										children [
 											Inline { url "NeckPitch.wrl" }
 										]
-									} # Segment NeckPitch
-									DEF HeadPitch_y Joint {
+									} # Segment NeckPitchLink
+									DEF HeadPitch Joint {
 										jointType "rotate"
 										jointAxis "Y"
 										jointId 3
@@ -301,12 +301,12 @@ DEF Romeo Humanoid {
 										lvlimit [-7.2988824]
 										uvlimit [7.2988824]
 										children [
-											DEF HeadPitch Segment {
+											DEF HeadPitchLink Segment {
 												centerOfMass          0.00137 0.00027 -0.00641
 												mass                  0.13981
 												momentsOfInertia      [ 3.89601e-05 -3.814e-08 -2.29622e-06 -3.814e-08 7.254653e-05 -6.46e-09 -2.29622e-06 -6.46e-09 5.376501e-05 ]
-											} # Segment HeadPitch
-											DEF HeadRoll_x Joint {
+											} # Segment HeadPitchLink
+											DEF HeadRoll Joint {
 												jointType "rotate"
 												jointAxis "X"
 												jointId 4
@@ -317,14 +317,14 @@ DEF Romeo Humanoid {
 												lvlimit [-4.7442645]
 												uvlimit [4.7442645]
 												children [
-													DEF HeadRoll Segment {
+													DEF HeadRollLink Segment {
 														centerOfMass          0.01617 0.00168 0.0757
 														mass                  1.41282
 														momentsOfInertia      [ 0.01490874108 -5.142093e-05 -0.00068489344 -5.142093e-05 0.01731891079 -0.00019152738 -0.00068489344 -0.00019152738 0.00735474589 ]
 														children [
 															Inline { url "HeadRoll.wrl" }
 														]
-													} # Segment HeadRoll
+													} # Segment HeadRollLink
 												]
 											} # Joint HeadRoll
 										]
@@ -333,7 +333,7 @@ DEF Romeo Humanoid {
 							} # Joint NeckPitch
 						]
 					} # Joint NeckYaw
-					DEF LShoulderPitch_y Joint {
+					DEF LShoulderPitch Joint {
 						jointType "rotate"
 						jointAxis "Y"
 						jointId 5
@@ -344,12 +344,12 @@ DEF Romeo Humanoid {
 						lvlimit [-6.52664058]
 						uvlimit [6.52664058]
 						children [
-							DEF LShoulderPitch Segment {
+							DEF LShoulderPitchLink Segment {
 								centerOfMass          0.00149 -0.03299 0.00018
 								mass                  0.69402
 								momentsOfInertia      [ 0.00201004114 2.37595e-06 -2.16793e-06 2.37595e-06 0.00057062588 8.27832e-06 -2.16793e-06 8.27832e-06 0.00194067879 ]
-							} # Segment LShoulderPitch
-							DEF LShoulderYaw_z Joint {
+							} # Segment LShoulderPitchLink
+							DEF LShoulderYaw Joint {
 								jointType "rotate"
 								jointAxis "Z"
 								jointId 6
@@ -360,15 +360,15 @@ DEF Romeo Humanoid {
 								lvlimit [-10.333784]
 								uvlimit [10.333784]
 								children [
-									DEF LShoulderYaw Segment {
+									DEF LShoulderYawLink Segment {
 										centerOfMass          0.09367 0.01373 0.00103
 										mass                  0.57151
 										momentsOfInertia      [ 0.00074281758 -0.00061767526 -7.28438e-05 -0.00061767526 0.00650202304 -1.251569e-05 -7.28438e-05 -1.251569e-05 0.00664433886 ]
 										children [
 											Inline { url "LShoulderYaw.wrl" }
 										]
-									} # Segment LShoulderYaw
-									DEF LElbowRoll_x Joint {
+									} # Segment LShoulderYawLink
+									DEF LElbowRoll Joint {
 										jointType "rotate"
 										jointAxis "X"
 										jointId 7
@@ -379,12 +379,12 @@ DEF Romeo Humanoid {
 										lvlimit [-10.333784]
 										uvlimit [10.333784]
 										children [
-											DEF LElbowRoll Segment {
+											DEF LElbowRollLink Segment {
 												centerOfMass          -0.02231 -0.0024 0
 												mass                  0.39848
 												momentsOfInertia      [ 0.00017900324 -2.25555e-06 1.376e-08 -2.25555e-06 0.00080432225 8.007e-08 1.376e-08 8.007e-08 0.00077956048 ]
-											} # Segment LElbowRoll
-											DEF LElbowYaw_z Joint {
+											} # Segment LElbowRollLink
+											DEF LElbowYaw Joint {
 												jointType "rotate"
 												jointAxis "Z"
 												jointId 8
@@ -395,15 +395,15 @@ DEF Romeo Humanoid {
 												lvlimit [-10.3810644]
 												uvlimit [10.3810644]
 												children [
-													DEF LElbowYaw Segment {
+													DEF LElbowYawLink Segment {
 														centerOfMass          0.06738 0.01043 -0.00031
 														mass                  0.31265
 														momentsOfInertia      [ 0.00037509574 -0.00022528338 2.58073e-06 -0.00022528338 0.00209727597 2.74613e-06 2.58073e-06 2.74613e-06 0.00211064798 ]
 														children [
 															Inline { url "LElbowYaw.wrl" }
 														]
-													} # Segment LElbowYaw
-													DEF LWristRoll_x Joint {
+													} # Segment LElbowYawLink
+													DEF LWristRoll Joint {
 														jointType "rotate"
 														jointAxis "X"
 														jointId 9
@@ -414,15 +414,15 @@ DEF Romeo Humanoid {
 														lvlimit [-0]
 														uvlimit [0]
 														children [
-															DEF LWristRoll Segment {
+															DEF LWristRollLink Segment {
 																centerOfMass          -0.0593 -5e-05 -0.00069
 																mass                  0.17563
 																momentsOfInertia      [ 6.721454e-05 -6.373e-07 -1.358095e-05 -6.373e-07 0.00085119568 -2.443e-08 -1.358095e-05 -2.443e-08 0.00084034753 ]
 																children [
 																	Inline { url "LWristRoll.wrl" }
 																]
-															} # Segment LWristRoll
-															DEF LWristYaw_y Joint {
+															} # Segment LWristRollLink
+															DEF LWristYaw Joint {
 																jointType "rotate"
 																jointAxis "Y"
 																jointId 10
@@ -433,15 +433,15 @@ DEF Romeo Humanoid {
 																lvlimit [-0]
 																uvlimit [0]
 																children [
-																	DEF LWristYaw Segment {
+																	DEF LWristYawLink Segment {
 																		centerOfMass          -0.00746 -0.00016 -0.00022
 																		mass                  0.07595
 																		momentsOfInertia      [ 1.454017e-05 -4.157e-08 7.674e-08 -4.157e-08 3.919069e-05 3.08e-09 7.674e-08 3.08e-09 3.817871e-05 ]
 																		children [
 																			Inline { url "WristYaw.wrl" }
 																		]
-																	} # Segment LWristYaw
-																	DEF LWristPitch_z Joint {
+																	} # Segment LWristYawLink
+																	DEF LWristPitch Joint {
 																		jointType "rotate"
 																		jointAxis "Z"
 																		jointId 11
@@ -452,14 +452,14 @@ DEF Romeo Humanoid {
 																		lvlimit [-0]
 																		uvlimit [0]
 																		children [
-																			DEF LWristPitch Segment {
+																			DEF LWristPitchLink Segment {
 																				centerOfMass          0.06987 -0.00381 -0.00165
 																				mass                  0.16569
 																				momentsOfInertia      [ 0.00011252888 4.725831e-05 1.704036e-05 4.725831e-05 0.00107981778 -1.54761e-05 1.704036e-05 -1.54761e-05 0.00115367043 ]
 																				children [
 																					Inline { url "LHand.wrl" }
 																				]
-																			} # Segment LWristPitch
+																			} # Segment LWristPitchLink
 																		]
 																	} # Joint LWristPitch
 																]
@@ -474,7 +474,7 @@ DEF Romeo Humanoid {
 							} # Joint LShoulderYaw
 						]
 					} # Joint LShoulderPitch
-					DEF RShoulderPitch_y Joint {
+					DEF RShoulderPitch Joint {
 						jointType "rotate"
 						jointAxis "Y"
 						jointId 12
@@ -485,12 +485,12 @@ DEF Romeo Humanoid {
 						lvlimit [-6.52664058]
 						uvlimit [6.52664058]
 						children [
-							DEF RShoulderPitch Segment {
+							DEF RShoulderPitchLink Segment {
 								centerOfMass          0.00149 0.03299 -0.00018
 								mass                  0.69402
 								momentsOfInertia      [ 0.00201004114 -2.37595e-06 2.16793e-06 -2.37595e-06 0.00057062588 8.27832e-06 2.16793e-06 8.27832e-06 0.00194067879 ]
-							} # Segment RShoulderPitch
-							DEF RShoulderYaw_z Joint {
+							} # Segment RShoulderPitchLink
+							DEF RShoulderYaw Joint {
 								jointType "rotate"
 								jointAxis "Z"
 								jointId 13
@@ -501,15 +501,15 @@ DEF Romeo Humanoid {
 								lvlimit [-10.333784]
 								uvlimit [10.333784]
 								children [
-									DEF RShoulderYaw Segment {
+									DEF RShoulderYawLink Segment {
 										centerOfMass          0.0937 -0.01373 -0.00069
 										mass                  0.57071
 										momentsOfInertia      [ 0.00074235595 0.00061720176 5.985213e-06 0.00061720176 0.00649988502 -1.074174e-06 5.985213e-05 -1.074174e-05 0.000664209089 ]
 										children [
 											Inline { url "RShoulderYaw.wrl" }
 										]
-									} # Segment RShoulderYaw
-									DEF RElbowRoll_x Joint {
+									} # Segment RShoulderYawLink
+									DEF RElbowRoll Joint {
 										jointType "rotate"
 										jointAxis "X"
 										jointId 14
@@ -520,12 +520,12 @@ DEF Romeo Humanoid {
 										lvlimit [-10.333784]
 										uvlimit [10.333784]
 										children [
-											DEF RElbowRoll Segment {
+											DEF RElbowRollLink Segment {
 												centerOfMass          -0.02231 -0.0024 0
 												mass                  0.39848
 												momentsOfInertia      [ 0.00017900324 -2.25555e-06 1.376e-08 -2.25555e-06 0.00080432225 8.007e-08 1.376e-08 8.007e-08 0.00077956048 ]
-											} # Segment RElbowRoll
-											DEF RElbowYaw_z Joint {
+											} # Segment RElbowRollLink
+											DEF RElbowYaw Joint {
 												jointType "rotate"
 												jointAxis "Z"
 												jointId 15
@@ -536,15 +536,15 @@ DEF Romeo Humanoid {
 												lvlimit [-10.3810644]
 												uvlimit [10.3810644]
 												children [
-													DEF RElbowYaw Segment {
+													DEF RElbowYawLink Segment {
 														centerOfMass          0.06753 -0.00889 0.00022
 														mass                  0.31403
 														momentsOfInertia      [ 0.00036672778 0.00018563123 -5.37905e-07 0.00018563123 0.00211103842 3.1932e-07 -5.37905e-06 3.1932e-06 0.000211493035 ]
 														children [
 															Inline { url "RElbowYaw.wrl" }
 														]
-													} # Segment RElbowYaw
-													DEF RWristRoll_x Joint {
+													} # Segment RElbowYawLink
+													DEF RWristRoll Joint {
 														jointType "rotate"
 														jointAxis "X"
 														jointId 16
@@ -555,15 +555,15 @@ DEF Romeo Humanoid {
 														lvlimit [-0]
 														uvlimit [0]
 														children [
-															DEF RWristRoll Segment {
+															DEF RWristRollLink Segment {
 																centerOfMass          -0.0593 -5e-05 -0.00069
 																mass                  0.17563
 																momentsOfInertia      [ 6.721454e-05 -6.373e-07 -1.358095e-05 -6.373e-07 0.00085119568 -2.443e-08 -1.358095e-05 -2.443e-08 0.00084034753 ]
 																children [
 																	Inline { url "RWristRoll.wrl" }
 																]
-															} # Segment RWristRoll
-															DEF RWristYaw_y Joint {
+															} # Segment RWristRollLink
+															DEF RWristYaw Joint {
 																jointType "rotate"
 																jointAxis "Y"
 																jointId 17
@@ -574,15 +574,15 @@ DEF Romeo Humanoid {
 																lvlimit [-0]
 																uvlimit [0]
 																children [
-																	DEF RWristYaw Segment {
+																	DEF RWristYawLink Segment {
 																		centerOfMass          -0.00746 -0.00016 -0.00022
 																		mass                  0.07595
 																		momentsOfInertia      [ 1.454017e-05 -4.157e-08 7.674e-08 -4.157e-08 3.919069e-05 3.08e-09 7.674e-08 3.08e-09 3.817871e-05 ]
 																		children [
 																			Inline { url "WristYaw.wrl" }
 																		]
-																	} # Segment RWristYaw
-																	DEF RWristPitch_z Joint {
+																	} # Segment RWristYawLink
+																	DEF RWristPitch Joint {
 																		jointType "rotate"
 																		jointAxis "Z"
 																		jointId 18
@@ -593,14 +593,14 @@ DEF Romeo Humanoid {
 																		lvlimit [-0]
 																		uvlimit [0]
 																		children [
-																			DEF RWristPitch Segment {
+																			DEF RWristPitchLink Segment {
 																				centerOfMass          0.06987 0.00381 -0.00165
 																				mass                  0.16569
 																				momentsOfInertia      [ 0.00011252888 0 0 0 0.00107981778 0 0 0 0.00115367043 ]
 																				children [
 																					Inline { url "RHand.wrl" }
 																				]
-																			} # Segment RWristPitch
+																			} # Segment RWristPitchLink
 																		]
 																	} # Joint RWristPitch
 																]
@@ -617,7 +617,7 @@ DEF Romeo Humanoid {
 					} # Joint RShoulderPitch
 				]
 			} # Joint TrunkYaw
-			DEF LHipYaw_z Joint {
+			DEF LHipYaw Joint {
 				jointType "rotate"
 				jointAxis "Z"
 				jointId 19
@@ -628,12 +628,12 @@ DEF Romeo Humanoid {
 				lvlimit [-8.082461]
 				uvlimit [8.082461]
 				children [
-					DEF LHipYaw Segment {
+					DEF LHipYawLink Segment {
 						centerOfMass          -0.00871 -0.00022 0.06319
 						mass                  0.49477
 						momentsOfInertia      [ 0.00303667904 0 0 0 0.0034799778 0 0 0 0.00062277265 ]
-					} # Segment LHipYaw
-					DEF LHipRoll_x Joint {
+					} # Segment LHipYawLink
+					DEF LHipRoll Joint {
 						jointType "rotate"
 						jointAxis "X"
 						jointId 20
@@ -644,12 +644,12 @@ DEF Romeo Humanoid {
 						lvlimit [-10.289294]
 						uvlimit [10.289294]
 						children [
-							DEF LHipRoll Segment {
+							DEF LHipRollLink Segment {
 								centerOfMass          0.00293 -0.00027 0.00011
 								mass                  0.6607
 								momentsOfInertia      [ 0.00089862024 0 0 0 0.00050955901 0 0 0 0.00093539188 ]
-							} # Segment LHipRoll
-							DEF LHipPitch_y Joint {
+							} # Segment LHipRollLink
+							DEF LHipPitch Joint {
 								jointType "rotate"
 								jointAxis "Y"
 								jointId 21
@@ -660,15 +660,15 @@ DEF Romeo Humanoid {
 								lvlimit [-6.7799634]
 								uvlimit [6.7799634]
 								children [
-									DEF LHipPitch Segment {
+									DEF LHipPitchLink Segment {
 										centerOfMass          -0.00971 0.00135 -0.15083
 										mass                  4.33935
 										momentsOfInertia      [ 0.13289504951 0 0 0 0.13397739558 0 0 0 0.01216872585 ]
 										children [
 											Inline { url "LHipPitch.wrl" }
 										]
-									} # Segment LHipPitch
-									DEF LKneePitch_y Joint {
+									} # Segment LHipPitchLink
+									DEF LKneePitch Joint {
 										jointType "rotate"
 										jointAxis "Y"
 										jointId 22
@@ -679,15 +679,15 @@ DEF Romeo Humanoid {
 										lvlimit [-8.27600953]
 										uvlimit [8.27600953]
 										children [
-											DEF LKneePitch Segment {
+											DEF LKneePitchLink Segment {
 												centerOfMass          -0.00532 -0.00075 -0.12258
 												mass                  2.61063
 												momentsOfInertia      [ 0.05491303061 0 0 0 0.05496634755 0 0 0 0.00398481696 ]
 												children [
 													Inline { url "LKneePitch.wrl" }
 												]
-											} # Segment LKneePitch
-											DEF LAnklePitch_y Joint {
+											} # Segment LKneePitchLink
+											DEF LAnklePitch Joint {
 												jointType "rotate"
 												jointAxis "Y"
 												jointId 23
@@ -698,12 +698,12 @@ DEF Romeo Humanoid {
 												lvlimit [-6.7799634]
 												uvlimit [6.7799634]
 												children [
-													DEF LAnklePitch Segment {
+													DEF LAnklePitchLink Segment {
 														centerOfMass          0.00059 0.00051 0.00038
 														mass                  0.5008
 														momentsOfInertia      [ 0.00042995195 0 0 0 0.00028145145 0 0 0 0.00052766479 ]
-													} # Segment LAnklePitch
-													DEF LAnkleRoll_x Joint {
+													} # Segment LAnklePitchLink
+													DEF LAnkleRoll Joint {
 														jointType "rotate"
 														jointAxis "X"
 														jointId 24
@@ -714,15 +714,15 @@ DEF Romeo Humanoid {
 														lvlimit [-10.28929]
 														uvlimit [10.28929]
 														children [
-															DEF LAnkleRoll Segment {
+															DEF LAnkleRollLink Segment {
 																centerOfMass          0.02618 0.00259 -0.03683
 																mass                  0.64224
 																momentsOfInertia      [ 0.00139908277 0 0 0 0.00349259103 0 0 0 0.00266359477 ]
 																children [
 																	Inline { url "LAnkleRoll.wrl" }
 																]
-															} # Segment LAnkleRoll
-															DEF LToePitch_y Joint {
+															} # Segment LAnkleRollLink
+															DEF LToePitch Joint {
 																jointType "rotate"
 																jointAxis "Y"
 																jointId 25
@@ -733,14 +733,14 @@ DEF Romeo Humanoid {
 																lvlimit [-0]
 																uvlimit [0]
 																children [
-																	DEF LToePitch Segment {
+																	DEF LToePitchLink Segment {
 																		centerOfMass          0.01636 -0.00167 -0.00812
 																		mass                  0.2889
 																		momentsOfInertia      [ 0.00025411726 0 0 0 0.00029543601 0 0 0 0.0004436638 ]
 																		children [
 																			Inline { url "LToePitch.wrl" }
 																		]
-																	} # Segment LToePitch
+																	} # Segment LToePitchLink
 																]
 															} # Joint LToePitch
 														]
@@ -755,7 +755,7 @@ DEF Romeo Humanoid {
 					} # Joint LHipRoll
 				]
 			} # Joint LHipYaw
-			DEF RHipYaw_z Joint {
+			DEF RHipYaw Joint {
 				jointType "rotate"
 				jointAxis "Z"
 				jointId 26
@@ -766,12 +766,12 @@ DEF Romeo Humanoid {
 				lvlimit [-8.082461]
 				uvlimit [8.082461]
 				children [
-					DEF RHipYaw Segment {
+					DEF RHipYawLink Segment {
 						centerOfMass          -0.00871 0.00022 0.06319
 						mass                  0.49477
 						momentsOfInertia      [ 0.00303667904 0 0 0 0.0034799778 0 0 0 0.00062277265 ]
-					} # Segment RHipYaw
-					DEF RHipRoll_x Joint {
+					} # Segment RHipYawLink
+					DEF RHipRoll Joint {
 						jointType "rotate"
 						jointAxis "X"
 						jointId 27
@@ -782,12 +782,12 @@ DEF Romeo Humanoid {
 						lvlimit [-10.289294]
 						uvlimit [10.289294]
 						children [
-							DEF RHipRoll Segment {
+							DEF RHipRollLink Segment {
 								centerOfMass          0.00293 -0.00027 0.00011
 								mass                  0.6607
 								momentsOfInertia      [ 0.00089862024 0 0 0 0.00050955901 0 0 0 0.00093539188 ]
-							} # Segment RHipRoll
-							DEF RHipPitch_y Joint {
+							} # Segment RHipRollLink
+							DEF RHipPitch Joint {
 								jointType "rotate"
 								jointAxis "Y"
 								jointId 28
@@ -798,15 +798,15 @@ DEF Romeo Humanoid {
 								lvlimit [-6.7799634]
 								uvlimit [6.7799634]
 								children [
-									DEF RHipPitch Segment {
+									DEF RHipPitchLink Segment {
 										centerOfMass          -0.00971 -0.00135 -0.15083
 										mass                  4.33935
 										momentsOfInertia      [ 0.13289504951 0 0 0 0.13397739558 0 0 0 0.01216872585 ]
 										children [
 											Inline { url "RHipPitch.wrl" }
 										]
-									} # Segment RHipPitch
-									DEF RKneePitch_y Joint {
+									} # Segment RHipPitchLink
+									DEF RKneePitch Joint {
 										jointType "rotate"
 										jointAxis "Y"
 										jointId 29
@@ -817,15 +817,15 @@ DEF Romeo Humanoid {
 										lvlimit [-8.27600953]
 										uvlimit [8.27600953]
 										children [
-											DEF RKneePitch Segment {
+											DEF RKneePitchLink Segment {
 												centerOfMass          -0.00532 0.00075 -0.12258
 												mass                  2.61063
 												momentsOfInertia      [ 0.05491303061 0 0 0 0.05496634755 0 0 0 0.00398481696 ]
 												children [
 													Inline { url "RKneePitch.wrl" }
 												]
-											} # Segment RKneePitch
-											DEF RAnklePitch_y Joint {
+											} # Segment RKneePitchLink
+											DEF RAnklePitch Joint {
 												jointType "rotate"
 												jointAxis "Y"
 												jointId 30
@@ -836,12 +836,12 @@ DEF Romeo Humanoid {
 												lvlimit [-6.7799634]
 												uvlimit [6.7799634]
 												children [
-													DEF RAnklePitch Segment {
+													DEF RAnklePitchLink Segment {
 														centerOfMass          0.00059 -0.00051 0.00038
 														mass                  0.5008
 														momentsOfInertia      [ 0.00042995195 0 0 0 0.00028145145 0 0 0 0.00052766479 ]
-													} # Segment RAnklePitch
-													DEF RAnkleRoll_x Joint {
+													} # Segment RAnklePitchLink
+													DEF RAnkleRoll Joint {
 														jointType "rotate"
 														jointAxis "X"
 														jointId 31
@@ -852,15 +852,15 @@ DEF Romeo Humanoid {
 														lvlimit [-10.28929]
 														uvlimit [10.28929]
 														children [
-															DEF RAnkleRoll Segment {
+															DEF RAnkleRollLink Segment {
 																centerOfMass          0.02618 -0.00259 -0.03683
 																mass                  0.64224
 																momentsOfInertia      [ 0.00139908277 0 0 0 0.00349259103 0 0 0 0.00266359477 ]
 																children [
 																	Inline { url "RAnkleRoll.wrl" }
 																]
-															} # Segment RAnkleRoll
-															DEF RToePitch_y Joint {
+															} # Segment RAnkleRollLink
+															DEF RToePitch Joint {
 																jointType "rotate"
 																jointAxis "Y"
 																jointId 32
@@ -871,14 +871,14 @@ DEF Romeo Humanoid {
 																lvlimit [-0]
 																uvlimit [0]
 																children [
-																	DEF RToePitch Segment {
+																	DEF RToePitchLink Segment {
 																		centerOfMass          0.01636 0.00167 -0.00812
 																		mass                  0.2889
 																		momentsOfInertia      [ 0.00025411726 0 0 0 0.00029543601 0 0 0 0.0004436638 ]
 																		children [
 																			Inline { url "RToePitch.wrl" }
 																		]
-																	} # Segment RToePitch
+																	} # Segment RToePitchLink
 																]
 															} # Joint RToePitch
 														]
@@ -899,45 +899,7 @@ DEF Romeo Humanoid {
 
 	# List up all the joints' name you use
 	joints [
-		USE TrunkYaw_z,
-		USE NeckYaw_z,
-		USE NeckPitch_y,
-		USE HeadPitch_y,
-		USE HeadRoll_x,
-		USE LShoulderPitch_y,
-		USE LShoulderYaw_z,
-		USE LElbowRoll_x,
-		USE LElbowYaw_z,
-		USE LWristRoll_x,
-		USE LWristYaw_y,
-		USE LWristPitch_z,
-		USE RShoulderPitch_y,
-		USE RShoulderYaw_z,
-		USE RElbowRoll_x,
-		USE RElbowYaw_z,
-		USE RWristRoll_x,
-		USE RWristYaw_y,
-		USE RWristPitch_z,
-		USE LHipYaw_z,
-		USE LHipRoll_x,
-		USE LHipPitch_y,
-		USE LKneePitch_y,
-		USE LAnklePitch_y,
-		USE LAnkleRoll_x,
-		USE LToePitch_y,
-		USE RHipYaw_z,
-		USE RHipRoll_x,
-		USE RHipPitch_y,
-		USE RKneePitch_y,
-		USE RAnklePitch_y,
-		USE RAnkleRoll_x,
-		USE RToePitch_y,
-	]
-
-	# List up all the segments' name you use
-	  segments [
 		USE TrunkYaw,
-		USE Trunk,
 		USE NeckYaw,
 		USE NeckPitch,
 		USE HeadPitch,
@@ -970,5 +932,43 @@ DEF Romeo Humanoid {
 		USE RAnklePitch,
 		USE RAnkleRoll,
 		USE RToePitch,
+	]
+
+	# List up all the segments' name you use
+	  segments [
+		USE TrunkYawLink,
+		USE TrunkLink,
+		USE NeckYawLink,
+		USE NeckPitchLink,
+		USE HeadPitchLink,
+		USE HeadRollLink,
+		USE LShoulderPitchLink,
+		USE LShoulderYawLink,
+		USE LElbowRollLink,
+		USE LElbowYawLink,
+		USE LWristRollLink,
+		USE LWristYawLink,
+		USE LWristPitchLink,
+		USE RShoulderPitchLink,
+		USE RShoulderYawLink,
+		USE RElbowRollLink,
+		USE RElbowYawLink,
+		USE RWristRollLink,
+		USE RWristYawLink,
+		USE RWristPitchLink,
+		USE LHipYawLink,
+		USE LHipRollLink,
+		USE LHipPitchLink,
+		USE LKneePitchLink,
+		USE LAnklePitchLink,
+		USE LAnkleRollLink,
+		USE LToePitchLink,
+		USE RHipYawLink,
+		USE RHipRollLink,
+		USE RHipPitchLink,
+		USE RKneePitchLink,
+		USE RAnklePitchLink,
+		USE RAnkleRollLink,
+		USE RToePitchLink,
 	]
 }
