@@ -754,7 +754,7 @@ DEF RomeoHands Humanoid {
 									DEF RShoulderYawLink Segment {
 										centerOfMass          0.0937 -0.01373 -0.00069
 										mass                  0.57071
-										momentsOfInertia      [ 0.00074235595 0.00061720176 5.985213e-06 0.00061720176 0.00649988502 -1.074174e-06 5.985213e-05 -1.074174e-05 0.000664209089 ]
+										momentsOfInertia      [ 0.00074235595 0.00061720176 5.985213e-06 0.00061720176 0.00649988502 -1.074174e-06 5.985213e-06 -1.074174e-06 0.000664209089 ]
 										children [
 											Inline { url "RShoulderYaw.wrl" }
 										]
@@ -789,7 +789,7 @@ DEF RomeoHands Humanoid {
 													DEF RElbowYawLink Segment {
 														centerOfMass          0.06753 -0.00889 0.00022
 														mass                  0.31403
-														momentsOfInertia      [ 0.00036672778 0.00018563123 -5.37905e-07 0.00018563123 0.00211103842 3.1932e-07 -5.37905e-06 3.1932e-06 0.000211493035 ]
+														momentsOfInertia      [ 0.00036672778 0.00018563123 -5.37905e-07 0.00018563123 0.00211103842 3.1932e-07 -5.37905e-07 3.1932e-07 0.000211493035 ]
 														children [
 															Inline { url "RElbowYaw.wrl" }
 														]
