@@ -28,5 +28,5 @@ INSTALL(FILES
     "${CMAKE_CURRENT_BINARY_DIR}/robotSpecific_romeo_hands_notoes.py"
     DESTINATION ${PROJECT_ROOT_DIR}/../sot-dyninv/python)
 ELSE()
-MESSAGE("Impossible to install romeo specific data: the path to sot-dyninv is not known")
+# MESSAGE("Impossible to install romeo specific data: the path to sot-dyninv is not known")
 ENDIF(EXISTS ${PROJECT_ROOT_DIR}/../sot-dyninv/python)
