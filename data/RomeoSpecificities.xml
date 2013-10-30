@@ -67,11 +67,11 @@
 	<Wrists>
 		<Right>
 			<JointNb> 1 </JointNb>
-			<JointsID> 17 </JointsID>
+			<JointsID> 18 </JointsID>
 		</Right>
 		<Left>
 			<JointNb> 1 </JointNb>
-			<JointsID> 10 </JointsID>
+			<JointsID> 11 </JointsID>
 		</Left>
 	</Wrists>
 
