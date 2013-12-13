@@ -49,18 +49,18 @@
 		</Left>
 	</Legs>
 
-	<Hands> <!-- unknown yet -->
+	<Hands>
 		<Right>
-			<Center>0  0  0</Center>
-			<okayAxis>0.0 1.0 0.0 </okayAxis>
-			<showingAxis>0.0 0.0 1.0</showingAxis>
-			<palmAxis>1.0 0.0 0.0</palmAxis>
+			<Center>0.09 0 -0.02</Center>
+			<okayAxis>1.0 0.0 0.0 </okayAxis>
+			<showingAxis>0.0 0.0 -1.0</showingAxis>
+			<palmAxis>0.0 1.0 0.0</palmAxis>
 		</Right>
 		<Left>
-			<Center>0  0  0</Center>
-			<okayAxis>0.0 1.0 0.0 </okayAxis>
-			<showingAxis>0.0 0.0 1.0</showingAxis>
-			<palmAxis>1.0 0.0 0.0</palmAxis>
+			<Center>0.09 0 -0.02</Center>
+			<okayAxis>1.0 0.0 0.0 </okayAxis>
+			<showingAxis>0.0 0.0 -1.0</showingAxis>
+			<palmAxis>0.0 1.0 0.0</palmAxis>
 		</Left>
 	</Hands>
 
