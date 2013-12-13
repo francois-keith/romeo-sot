@@ -1,7 +1,7 @@
 # 
-#  Copyright CNRS-AIST 
+#  Copyright CNRS-AIST, Inria Rhones-Alpes
 #
-#  Author: Florent Lamiraux, François Keith
+#  Author: Florent Lamiraux, Francois Keith
 # 
 
 SET(PROJECT_NAME_NOTOES ${PROJECT_NAME}-notoes)

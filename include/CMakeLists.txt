@@ -1,9 +1,9 @@
 # 
-#  Copyright JRL CNRS-AIST
+#  Copyright JRL CNRS-AIST, Inria Rhones-Alpes
 #
 #  Author: Florent Lamiraux
 #          Olivier Stasse
-#          François Keith
+#          Francois Keith
 # 
 
 SET(romeo_HEADERS
