@@ -1,7 +1,6 @@
 Romeo
 =================
 
-IMPORTANT: This software is *NOT* open-source.
 
 Setup
 -----
